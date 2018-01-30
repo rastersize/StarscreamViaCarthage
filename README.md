@@ -14,10 +14,11 @@ The branch `with-zlib-cc-spm` contents is the result of a fresh `carthage update
    github "daltoniam/Starscream"
    ```
 3. Run `carthage update --platform iOS`
-4. Drag the `Starscream.framework` bundle from `Carthage/Build/iOS/` into the “Embedded Binaries”
+4. Remove the extraneous checkouts `rm -rf Carthage/Checkouts/Starscream/Carthage`
+5. Drag the `Starscream.framework` bundle from `Carthage/Build/iOS/` into the “Embedded Binaries”
    box in the project config.
-5. Import Starscream in `ViewController.swift`
-6. Add some code to the `ViewController` class that uses Starscream. For example:
+6. Import Starscream in `ViewController.swift`
+7. Add some code to the `ViewController` class that uses Starscream. For example:
    ```swift
    import UIKit
    import Starscream
