@@ -1,3 +1,1 @@
-github "daltoniam/Starscream" "3.0.4"
-github "daltoniam/common-crypto-spm" "1.1.0"
-github "daltoniam/zlib-spm" "1.1.0"
+github "rastersize/Starscream" "327a7d8e9e395e51709944f7ad344deec18ea1a4"
