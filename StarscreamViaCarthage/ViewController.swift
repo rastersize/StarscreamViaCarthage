@@ -27,6 +27,11 @@ class ViewController: UIViewController, WebSocketDelegate {
 
     func websocketDidConnect(socket: WebSocketClient) {
         print("websocketDidConnect: \(socket)")
+        socket.write(string: "Hello!") {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+                self?.socket?.disconnect()
+            }
+        }
     }
 
     func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
